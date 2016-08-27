@@ -2,11 +2,26 @@ package com.bol.core;
 
 import java.util.Arrays;
 
+import javax.validation.constraints.Size;
+
+import com.sun.istack.internal.NotNull;
+
 public class SignUp {
 
+	@NotNull
+	@Size(min = 2, max = 40)
 	private String firstName;
+
+	@NotNull
+	@Size(min = 2, max = 40)
 	private String lastName;
+
+	@NotNull
+	@Size(min = 6, max = 20)
 	private String uuid;
+
+	@NotNull
+	@Size(min = 6, max = 20)
 	private char[] password;
 
 	public String getFirstName() {

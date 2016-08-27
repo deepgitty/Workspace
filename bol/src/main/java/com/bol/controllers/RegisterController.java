@@ -1,6 +1,9 @@
 package com.bol.controllers;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -16,7 +19,12 @@ public class RegisterController {
 	}
 
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public String processRegistration(SignUp signUp) {
+	public String processRegistration(@Valid SignUp signUp, Errors errors) {
+
+		if (errors.hasErrors()) {
+			return "register";
+		}
+
 		System.out.println(signUp);
 		return "redirect:/";
 	}
