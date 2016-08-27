@@ -1,31 +1,27 @@
 <div>
 	<header>
 		<div class="uls">
-			<ul class="silo-uls">
-				<li>Signup</li>
-				<li>Login</li>
+			<ul>
+				<li class="inline-block"><a href="./register">Signup</a></li>
+				<li class="inline-block"><a href="./login">Login</a></li>
 			</ul>
 		</div>
 
-		<div>
-			<div>
-				<img src="resources/images/logos.png" />
-			</div>
-			<div>
-				<form action="search">
-					<div>
-						<input type="text" />
-					</div>
-					<button type="submit"></button>
-				</form>
-
-			</div>
+		<div class="search-bar">
+			<form action="search" class="inline-block">
+				<label for="search">bol</label> <input type="text"
+					class="inline-block" id="search" /> <input type="submit"
+					class="inline-block" />
+			</form>
 		</div>
-		<div>
+		<div class="menu-bar">
 			<ul>
-				<li>Hindi</li>
-				<li>Punjabi</li>
-				<li>English</li>
+				<li class="inline-block"><a href="/bol/hindi"><span
+						id="menu-border">Hindi</span></a></li>
+				<li class="inline-block"><a href="/bol/hindi"><span
+						id="menu-border">Punjabi</span></a></li>
+				<li class="inline-block"><a href="/bol/hindi"><span
+						id="menu-border">English</span></a></li>
 			</ul>
 		</div>
 	</header>
