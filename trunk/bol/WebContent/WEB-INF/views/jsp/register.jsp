@@ -9,35 +9,37 @@
 </head>
 <body>
 	<%@ include file="header.jsp"%>
-	<div>Join Bol Network</div>
-	<div>
-		<form method=POST>
-			<div class="signup">
-				<div>
-					<label data-text="First name">First name</label>
-					<input type="text" name="firstName">
+	<div class="content">
+		<div>Join Bol Network</div>
+		<div>
+			<form method=POST>
+				<div class="signup">
+					<div>
+						<label data-text="First name">First name</label> <input
+							type="text" name="firstName">
+					</div>
+					<div>
+						<label data-text="Last name">Last name</label> <input type="text"
+							name="lastName">
+					</div>
+					<div>
+						<label data-text="Preferred ID">User id</label> <input type="text"
+							name="uuid">
+					</div>
+					<div>
+						<label data-text="Password">Password</label> <input
+							type="password" name="password">
+					</div>
+					<div>
+						<label data-text="Confirm password">Confirm password</label> <input
+							type="password" name="cnf_pwd">
+					</div>
+					<div>
+						<input type="submit" value="signup">
+					</div>
 				</div>
-				<div>
-					<label data-text="Last name">Last name</label>
-					<input type="text" name="lastName">
-				</div>
-				<div>
-					<label data-text="Preferred ID">User id</label>
-					<input type="text" name="uuid">
-				</div>
-				<div>
-					<label data-text="Password">Password</label>
-					<input type="password" name="password">
-				</div>
-				<div>
-					<label data-text="Confirm password">Confirm password</label>
-					<input type="password" name="cnf_pwd">
-				</div>
-				<div>
-					<input type="submit" value="signup">
-				</div>
-			</div>
-		</form>
+			</form>
+		</div>
 	</div>
 	<%@ include file="footer.jsp"%>
 </body>
