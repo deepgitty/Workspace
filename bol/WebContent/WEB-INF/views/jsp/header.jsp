@@ -9,7 +9,9 @@
 
 		<div id="resble">
 			<div id="resble-img">
-				<img id="logo" alt="bolyrics" src="resources/images/bolyrics.png">
+				<a href="/bol"> <img id="logo" alt="bolyrics"
+					src="resources/images/bolyrics.png">
+				</a>
 			</div>
 			<div id="resble-search">
 				<form action="search">

@@ -1,15 +1,40 @@
-#nav-bar {
-	clear: left;
-	padding: 1px 0px 25px 25px;
-	font-weight: bold;
-	font-size: 14px;
+#content {
+	padding-top: 120px;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
 }
 
-#nav-bar ul li {
-	margin-right: 20px;
+h1#joinHeader {
+	margin: 0 0 30px 0;
+	text-align: center;
+	color: #40bee9;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #40bee9;
 }
 
-/* This is fixed. No need to change */
+#info {
+	font-size: 1.5em;
+	margin-right: 200px;
+	color: #40bee9;
+}
+
+#signupNumber {
+	background-color: #40bee9;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 1.5em;
+	margin-right: 4px;
+	margin-bottom: 20px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+	border-radius: 100%;
+}
+
+/* This section should not be altered without me knowing */
 body {
 	font-family: Roboto, Arial, sans-serif;
 	color: #40bee9;
@@ -17,11 +42,43 @@ body {
 	margin: 0px;
 }
 
+.signup input[type=text],select,.signup input[type=password],select {
+	background-color: rgba(0, 0, 0, 0.03);
+	margin-bottom: 10px;
+	border-radius: 2px;
+	box-sizing: border-box;
+	width: 30%;
+	padding: 10px 40px 10px 5px;
+	border: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+.signup input[type=submit],select {
+	background-color: #40bee9;
+	margin-bottom: 25px;
+	color: white;
+	border-radius: 3px;
+	box-sizing: border-box;
+	width: 30%;
+	padding: 7px;
+	margin-top: 25px;
+	font-size: 1.8em;
+	border: 1px solid #40bee9;
+}
+
+.signup label {
+	display: block;
+	margin-bottom: 5px;
+	font-family: consolas;
+	margin-left: 385px;
+	text-align: left;
+}
+
 #header {
 	width: 100%;
 	position: fixed;
 	background: linear-gradient(to bottom, rgba(246, 246, 246, 1) 0,
 		rgba(246, 246, 246, .97) 100%);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.22);
 }
 
 header#headerElm {
@@ -55,13 +112,24 @@ ul li {
 	margin-right: 15px;
 }
 
-input[type=text],select {
+#resble input[type=text],select {
 	padding: 10px 40px 10px 5px;
-	border: 1px solid #40bee9;
+	border: 1px solid rgba(0, 0, 0, 0.22);
 	border-radius: 3px;
 	box-sizing: border-box;
 	position: absolute;
 	width: 94%;
+}
+
+#nav-bar {
+	clear: left;
+	padding: 1px 0px 25px 25px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#nav-bar ul li {
+	margin-right: 20px;
 }
 
 a:link,a:visited,a:hover {
