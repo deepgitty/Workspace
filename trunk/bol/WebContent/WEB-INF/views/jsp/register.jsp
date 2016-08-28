@@ -9,36 +9,40 @@
 </head>
 <body>
 	<%@ include file="header.jsp"%>
-	<div class="content">
-		<div>Join Bol Network</div>
-		<div>
-			<form method=POST>
-				<div class="signup">
-					<div>
-						<label data-text="First name">First name</label> <input
-							type="text" name="firstName">
+	<div id="content">
+		<div id="signUpForm">
+			<h1 id="joinHeader">Sign Up to Bol Network</h1>
+			<div>
+				<span id="signupNumber">1</span> <span id="info">Your basic
+					info</span>
+				<form method=POST>
+					<div class="signup">
+						<div>
+							<label data-text="First name" for="firstName">First Name:</label>
+							<input type="text" name="firstName">
+						</div>
+						<div>
+							<label data-text="Last name" for="lastName">Last Name:</label> <input
+								type="text" name="lastName">
+						</div>
+						<div>
+							<label data-text="Preferred ID" for="email">E-Mail:</label> <input
+								type="text" name="email">
+						</div>
+						<div>
+							<label data-text="Password" for="password">Password:</label> <input
+								type="password" name="password">
+						</div>
+						<div>
+							<label data-text="Confirm password" for="cnf_pwd">Confirm
+								Password:</label> <input type="password" name="cnf_pwd">
+						</div>
+						<div>
+							<input type="submit" value="signup">
+						</div>
 					</div>
-					<div>
-						<label data-text="Last name">Last name</label> <input type="text"
-							name="lastName">
-					</div>
-					<div>
-						<label data-text="Preferred ID">User id</label> <input type="text"
-							name="uuid">
-					</div>
-					<div>
-						<label data-text="Password">Password</label> <input
-							type="password" name="password">
-					</div>
-					<div>
-						<label data-text="Confirm password">Confirm password</label> <input
-							type="password" name="cnf_pwd">
-					</div>
-					<div>
-						<input type="submit" value="signup">
-					</div>
-				</div>
-			</form>
+				</form>
+			</div>
 		</div>
 	</div>
 	<%@ include file="footer.jsp"%>
