@@ -23,6 +23,27 @@ public abstract class AbstractEmployee implements Employee {
         return org;
     }
 
+    public boolean equals(Object o) {
+        if (o == this) return true;
+        if (o == null || !(o instanceof Employee)) return false;
+
+        Employee employee = (Employee) o;
+
+        return employeeID.equals(employee.getID()) &&
+                emailID.equals(employee.getEmailID()) &&
+                org.equals(employee.getOrganization());
+    }
+
+    @Override
+    public int hashCode() {
+
+        int hashCode = 17;
+        hashCode = 31 * hashCode + employeeID.hashCode();
+        hashCode = 31 * hashCode + emailID.hashCode();
+        hashCode = 31 * hashCode + org.hashCode();
+        return hashCode;
+    }
+
     public int compareTo(Employee o) {
 
         if (o == null) {
