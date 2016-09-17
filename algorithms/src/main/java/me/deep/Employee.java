@@ -5,11 +5,11 @@ package me.deep;
  *
  * @author Gagandeep Singh
  */
-public interface Employee {
+public interface Employee extends Comparable<Employee> {
 
     String getID();
 
-    String getOrginization();
+    String getOrganization();
 
     String getEmailID();
 }

@@ -7,10 +7,8 @@ package me.deep;
  */
 public class EmployeeImpl extends AbstractEmployee {
 
-    private String employeeID;
-    private String emailID;
-
     public EmployeeImpl(String employeeID, String emailID) {
+        super();
         this.employeeID = employeeID;
         this.emailID = emailID;
     }
